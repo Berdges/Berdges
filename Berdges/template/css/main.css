@@ -1,0 +1,245 @@
+﻿
+/*************************
+*******Typography******
+**************************/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100&subset=latin,cyrillic-ext,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Abel);
+
+@keyframes rotate_object{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(90deg);
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+/*header-начало*/
+header .header_logotip{
+  text-align: center;
+  margin-left: -10px; 
+}
+header .header_logotip a{
+  color: #000;
+  font-size: 70px;
+  font-family: "BreeSerif-Regular";
+  background: url("../images/logo.png") no-repeat;
+  background-position: -3px 3px;
+  padding-left: 72px;
+}
+header .header_logotip a:hover{
+  text-decoration: none;
+
+  outline: none;
+}
+header .header_logotip a:active{
+  text-decoration: none;
+
+  outline: none;
+}
+header .header_logotip a:focus{
+  text-decoration: none;
+  outline: none;
+}
+/*header-конец*/
+
+
+
+/*Главная страница - index.php*/
+
+/*Главная страница - форма входа-начало*/
+
+.index_choose_optin{
+  text-align: center;
+  margin-top: 180px;
+}
+.enter_site ul>li{
+  text-align: center;
+  position: relative;
+  width: 290px;
+  margin: 0 auto;
+}
+.enter_site ul>li{
+  list-style: none;
+  margin-top: 50px;
+}
+.enter_site ul>li input{
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+}
+.enter_site input:focus{
+  outline: none;
+}
+
+.support{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 240px;
+  padding-bottom: 5px;
+  position: relative;
+  text-decoration: none;
+}
+
+.enter_site ul li .support::before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background: #000;
+  transition: width 0.3s ease-in-out;
+  left: 0;
+  bottom: 0;
+}
+
+.enter_site ul li:hover .support:before {
+    width: 100%;
+}
+
+.index_choose_option a{
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px 15px 30px;
+  background-color: #191919; 
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.index_choose_option a:hover{
+  text-decoration: none;
+  box-shadow: rgba(0,0,0,);  
+}
+
+.index_choose_option input{
+  display: block;
+  margin: auto;
+  min-width: 100px;
+  padding: 15px 30px 15px 30px;
+  background-color: #191919; 
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.index_choose_option input:hover{
+  background-color: #212121;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+  text-decoration: none;
+  outline: none;
+}
+
+.index_choose_option input:active{
+  background-color: #000;
+}
+.index_choose_option input:focus{
+  outline: none;
+  text-decoration: none;  
+}
+.js-button-campaign{
+  margin-top: 15px;
+  display: inline-block;
+  font-size: 16px;
+  color: #000; 
+  font-weight: bold;
+}
+.js-button-campaign:hover{
+  cursor: pointer;
+}
+.js-button-campaign:active{
+  color: #464646;
+}
+/*Главная страница - форма входа-конец*/
+
+
+/*Модальнное окно - начало*/
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+}
+
+.popup {
+  position: absolute;
+  width: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #191919;
+  color: #fff;
+}
+.popup ul>li input{
+  margin-top: -20px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.close-popup:before {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  left: -4px;
+  transform: rotate(-45deg);
+}
+
+.close-popup:after {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  transform: rotate(45deg);
+  left: -4px;
+}
+.close-popup{
+  transition: transform 0.4s ease-in-out;
+}
+.close-popup:hover{
+  transition: transform 0.4s ease-in-out;
+  transform: rotate(90deg);
+}
+/*Модальное окно - конец*/
+
+/*Валидация - начало*/
+.inputRed{
+border:1px solid #ff4040;
+background-color: #ff4040;
+}
+.inputGreen{
+border:1px solid #83c954;
+background-color: #27C34B;
+}
+/*Валидация - конец*/
+
+.popup .support_reg_input{
+  height: 20px;
+  padding-bottom: 10px;
+}
