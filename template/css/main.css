@@ -1,0 +1,911 @@
+﻿
+/*************************
+*******Typography******
+**************************/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100&subset=latin,cyrillic-ext,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Abel);
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+/*header-начало*/
+.index_logotip{
+  text-align: center;
+  margin-left: -10px; 
+}
+.index_logotip a{
+  color: #000;
+  font-size: 70px;
+  font-family: "BreeSerif-Regular";
+  background: url("../images/logo.png") no-repeat;
+  background-position: -3px 3px;
+  padding-left: 72px;
+}
+.index_logotip a:hover{
+  text-decoration: none;
+
+  outline: none;
+}
+.index_logotip a:active{
+  text-decoration: none;
+
+  outline: none;
+}
+.index_logotip a:focus{
+  text-decoration: none;
+  outline: none;
+}
+/*header-конец*/
+
+/*Главная страница - index.php*/
+
+/*Главная страница - форма входа-начало*/
+.index_choose_optin{
+  text-align: center;
+  margin-top: 180px;
+}
+.enter_site ul>li{
+  text-align: center;
+  position: relative;
+  width: 290px;
+  margin: 0 auto;
+}
+.enter_site ul>li{
+  list-style: none;
+  margin-top: 50px;
+}
+.enter_site ul>li input{
+  font-size: 19px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+}
+.enter_site input:focus{
+  outline: none;
+}
+
+.support{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 240px;
+  padding-bottom: 5px;
+  position: relative;
+  text-decoration: none;
+}
+
+.enter_site ul li .support::before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background: #000;
+  transition: width 0.3s ease-in-out;
+  left: 0;
+  bottom: 0;
+}
+
+.enter_site ul li:hover .support:before {
+    width: 100%;
+}
+
+.index_choose_option a{
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px 15px 30px;
+  background-color: #191919; 
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.index_choose_option a:hover{
+  text-decoration: none;
+  box-shadow: rgba(0,0,0,0.5);
+}
+
+.index_choose_option input{
+  display: block;
+  margin: auto;
+  min-width: 100px;
+  padding: 15px 30px 15px 30px;
+  background-color: #191919; 
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.index_choose_option input:active{
+  background-color: #000;
+}
+.index_choose_option input:focus{
+  outline: none;
+  text-decoration: none;  
+}
+.js-button-campaign_registr{
+  margin-top: 15px;
+  display: inline-block;
+  font-size: 16px;
+  color: #000; 
+  font-weight: bold;
+}
+.js-button-campaign_registr:hover{
+  cursor: pointer;
+}
+.js-button-campaign_registr:active{
+  color: #464646;
+}
+/*Главная страница - форма входа-конец*/
+
+
+/*Модальнное окно регистрация - начало*/
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+}
+
+
+
+/*Модальное окно регистрация - конец*/
+
+/*Валидация - начало*/
+.inputRed{
+border:1px solid #ff4040;
+outline: 2px solid #ff4040;
+}
+.inputGreen{
+border:1px solid #83c954;
+border-color: #83c954;
+}
+/*Валидация - конец*/
+
+.popup .support_reg_input{
+  height: 20px;
+}
+
+
+
+
+
+
+
+/*Вёрстка основного сервиса*/
+
+/*Шапка - начало*/
+header{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header .main_logo a{
+  color: #000;
+  font-size: 40px;
+  font-family: "BreeSerif-Regular";
+  background: url("../images/mini_logo.png") no-repeat;
+  background-position: 25px 2px;
+  padding-left: 72px;
+}
+header .main_logo a:hover{
+  text-decoration: none;
+
+  outline: none;
+}
+header .main_logo a:active{
+  text-decoration: none;
+
+  outline: none;
+}
+header .main_logo a:focus{
+  text-decoration: none;
+  outline: none;
+}
+
+header .header_right{
+  position: relative;
+  text-align: right;
+  font-size: 25px;
+  margin-top: 12px;
+  padding-right: 20px;
+  color: #000;  
+}
+
+.header_right>a{
+  color:#000;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 18px;
+}
+.header_right>a:hover{
+  color:#000;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header_right ul{
+  display: inline-block;
+}
+.header_right ul>li:first-child{
+  list-style: none;
+}
+.header_right ul>li:first-child a{
+  color: #000;
+  font-size: 24px
+}
+.header_right ul>li:first-child a:hover{
+  text-decoration: none;
+}
+.header_right ul>li:last-child a{
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  min-height: 40px;
+  margin: 10px;
+}
+
+.header_right ul>li:last-child a:active{
+  color: #fff;
+}
+
+.header_right ul>li:last-child{
+  min-height: 40px;
+  padding: 10px 20px 10px 20px;
+}
+
+.sub_menu_header{
+  background-color: grey;
+  position: absolute;
+  border-radius: 2px;
+  right: 0;
+  display: none;
+  z-index: 2;
+}
+
+header .header_right ul:last-child:hover .sub_menu_header{
+  display: block; 
+}
+
+
+
+
+/*Шапка - конец*/
+
+
+
+
+/*Side bar - начало*/
+aside{
+  margin-left: 10px;
+  margin-top: 25px;
+  width: 230px;
+}
+aside ul>li{
+  list-style: none;
+  border-bottom: 1px solid #CCCCCC;
+}
+aside ul>li:last-child{
+  border-bottom: none;
+}
+aside ul>li a{
+  display: block;
+  padding: 20px 20px 20px 0;
+  color: #000;
+  font-size: 18px;
+}
+aside ul>li a:hover{
+  color: #000;
+  text-decoration: none;
+  background-color: #E8E8E8;
+}
+aside ul>li a:active{
+  outline: none;
+}
+aside ul>li a:focus{
+  outline: none;
+}
+.active_aside{
+  background-color: #7A7F82;
+}
+aside ul>li:hover{
+  cursor: pointer;
+}
+/*Side bar - конец*/
+
+
+/*Список новостей - начало*/
+.list_news .post_news{
+  width: 100%;
+  padding-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 270px;
+  background-color: rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.list_news .post_news .short_info_news{
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.list_news .post_news .short_info_news h2{
+    color: #fff;
+    font-size: 32px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+/*Модальное окно ставки на новость - начало*/
+.overlay_bet {
+  position: fixed;
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.popup_bet {
+  position: absolute;
+  width: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #191919;
+  color: #fff;
+}
+
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.close-popup:before {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  left: -4px;
+  transform: rotate(-45deg);
+}
+
+.close-popup:after {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  transform: rotate(45deg);
+  left: -4px;
+}
+.close-popup{
+  transition: transform 0.4s ease-in-out;
+}
+.close-popup:hover{
+  transition: transform 0.4s ease-in-out;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.list_news .post_news .short_info_news>.wrap_for_makebet{
+  color:#fff;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  width: 100%;
+  bottom: 10%;
+  position: absolute;
+  text-align: center;
+}
+.list_news .post_news .short_info_news>.wrap_for_makebet a{
+  color:#fff;
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 0px 0px 50px 0px rgba(166, 225, 236, 0.8);;
+}
+.list_news .post_news .short_info_news>.wrap_for_makebet a:hover{
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.7);
+  cursor: pointer;
+}
+.list_news .post_news .short_info_news>.wrap_for_makebet a:active{
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.9);
+  cursor: pointer;
+}
+
+/*Модальное окно ставки на новость - конец*/
+
+.list_news p{
+    color: #000;
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 40px;
+    margin-left: 40px;
+}
+
+.shadow{
+  cursor:text;
+  height: 250px;
+  box-shadow:inset 0px -140px 140px -40px #E8E8E8;
+  overflow: hidden;
+}
+.shadow:hover{
+  cursor: pointer;
+}
+
+.list_news p{
+color:#000;
+position:relative;
+z-index:-1;
+}
+
+.active_news{
+  height: 100%;
+  box-shadow: none;
+  transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+}
+
+.list_news .line_gap{
+  width: 85%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 1px;
+  padding: 0px;
+  background: linear-gradient(90deg, #fff, #333,#fff);
+}
+.list_news .line_gap:last-child{
+  background: none;
+}
+/*Cписок новостей - конец*/
+
+
+
+
+/*Форма подачи заявки на ставку - начало*/
+.bet{
+  font-size: 14px;
+  width: 280px;
+  margin-left: 10px;
+}
+.bet select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  text-decoration: underline;
+  padding: 10px 20px 10px 20px;
+  color: blue;
+  display: block;
+  margin: 0 auto;
+  text-align-last: center;
+  font-size: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.bet select option{
+  margin: 0 auto;
+}
+.bet select:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.bet select:active {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.bet select:focus {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.bet .choose_way{
+  margin: auto;
+  text-align: center;
+  width: 280px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.bet .choose_way div{
+  display: inline-block;
+  margin-right: -1px;
+  padding: 10px;
+  width: 50%
+}
+
+.bet .choose_way div:first-child{
+  border-right: 1px solid white;
+}
+
+.bet .choose_way:hover,.bet .choose_way div:active,.bet .choose_way div:focus{
+  cursor: pointer;
+}
+
+.active_choose_way{
+  border-bottom: none;
+  border-top: 1px solid white;
+}
+
+.inactive_choose_way{
+  border-bottom: 1px solid white;
+  border-top: none;
+}
+
+#bet_on_value{
+  display: none;
+}
+
+.bet .choose_way input{
+  display: none;
+}
+
+.bet .choose_date{
+  margin-bottom: 20px;
+}
+.bet .choose_date span{
+  margin-right: 15px;
+}
+.bet .choose_date input{
+  padding: 0px 5px 0px 5px;
+  width: 146px;
+}
+.bet ul>li{
+  display: block;
+  border-bottom: none;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.bet ul>li:nth-child(3){
+  margin-right: 0;
+}
+
+.bet ul>li input{
+  max-width: 86px;
+  display: block;
+  margin: 0 auto;
+  padding: 0px 5px 0px 5px;
+}
+
+.bet .predict{
+  margin: auto;
+  clear: both;
+  text-align: center;
+  position: relative;
+  height: 100px;
+}
+
+.bet .predict label{
+  font-size: 50px;
+  color: grey;
+  cursor: pointer;
+  width: 46px;
+  margin-left: 20px;
+}
+
+.bet .predict label input{
+  display: none;
+}
+
+.bet .predict label i{
+  position: absolute;
+  color: white;
+  display: block;
+}
+
+.bet .predict label:first-child i{
+  transform: rotate(45deg);
+  margin-top: -6px;
+}
+
+.bet .predict label:last-child i{
+  transform: rotate(-45deg);
+}
+
+.bet .predict label input:checked + i.fa-level-up-alt{
+  color: lawngreen;
+}
+
+.bet .predict label input:checked + i.fa-level-down-alt{
+  color: red;
+}
+
+form#bet_on_value ul>li:last-child{
+    margin-left:85px;
+    margin-bottom: 30px;
+}
+form#bet_on_value ul>li:last-child input{
+  max-width:107px;
+}
+
+.bet form>input{
+  display: block;
+  margin: auto;
+  min-width: 100px;
+  padding: 15px 30px 15px 30px;
+  background-color: #191919; 
+  color: #fff;
+  border-radius: 5px;
+}
+
+/*Форма подачи заявки на ставку - конец*/
+
+/*Личный кабинет - начало*/
+.info_about_bet{
+  margin-top: 20px;
+  font-size: 16px;
+  margin-right: 10px;
+  color: #000;
+  display: inline-block;
+  width: 270px;
+  min-height: 350px;
+  margin-right: 15px;
+  border: 1px solid #CDCDCD;
+}
+
+
+
+
+/*Раздел ставки - начало*/
+.info_about_bet:nth-child(3n){
+  margin-right: 0px;
+}
+.info_about_bet{
+  list-style: none;
+}
+.info_about_bet .top_part_info_bet{
+  border-bottom: 1px solid black;
+}
+.info_about_bet .top_part_info_bet a{
+  padding: 0 5px;
+}
+.info_about_bet .top_part_info_bet span{
+  display: inline-block;
+  float: right;
+  padding: 5px 5px;
+  font-size: 12px;
+}
+
+.middle_part_info_bet{
+  position: relative;
+  border-bottom: 1px dashed black;
+  padding-bottom: 20px;
+}
+.middle_part_info_bet span{
+  margin-top: 40px;
+  display: inline-block;
+}
+.middle_part_info_bet .info_bet_predict_icon_up, .middle_part_info_bet .info_bet_predict_icon_down{
+  display: inline-block;
+  font-size: 70px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.middle_part_info_bet>.predict_bet_from_to{
+  display: inline-block;
+  position: absolute;
+  font-size: 35px;
+  font-weight: lighter;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.middle_part_info_bet>.info_about_bet_history{
+  margin-top: 10px;
+}
+
+.info_about_bet .middle_part_info_bet p{
+  margin: 0;
+}
+.info_about_bet>.middle_part_info_bet>p:last-child{
+  margin-bottom: 20px;
+}
+
+.down_part_info_bet{
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.down_part_info_bet .wrap_shadow_for_down_part{
+  width:100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+}
+.down_part_info_bet>div>h2{
+  font-size: 18px;
+  position: absolute;
+  color: #fff;
+  font-weight: bolder;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.down_part_info_bet .wrap_for_read_news_on_bet{
+  color:#fff;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  width: 100%;
+  bottom: 10%;
+  position: absolute;
+  text-align: center;
+}
+.down_part_info_bet .wrap_for_read_news_on_bet a{
+  color:#fff;
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 50px 0px rgba(166, 225, 236, 0.8);;
+}
+.down_part_info_bet .wrap_for_read_news_on_bet a:hover{
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.7);
+  cursor: pointer;
+}
+.down_part_info_bet .wrap_for_read_news_on_bet a:active{
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.9);
+  cursor: pointer;
+}
+
+/*Вёртска модального окна новости на ставке - начало*/
+.overlay_news_on_bet {
+  position: fixed;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: green;
+  color: #fff;
+  display: none;
+  overflow: auto;
+}
+
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.close-popup:before {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  left: -4px;
+  transform: rotate(-45deg);
+}
+
+.close-popup:after {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  transform: rotate(45deg);
+  left: -4px;
+}
+.close-popup{
+  transition: transform 0.4s ease-in-out;
+}
+.close-popup:hover{
+  transition: transform 0.4s ease-in-out;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+/*Вёртска модального окна новости на ставке - начало*/
+
+
+
+
+
+
+
+
+
+
+/*Раздел ставки - конец*/
+#bet_result{
+  border-bottom: 1px solid #000;
+  color: blue;
+}
+.cabinet h2{
+  text-align: center;
+}
+.cabinet .about_me{
+  padding-top: 10px;
+  min-height: 300px;
+  width: 100%;
+}
+.cabinet .about_me ul>li{
+  list-style: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.cabinet_logout{
+  display: inline-block;
+  margin-top: 30px;
+  min-width: 100px;
+  padding: 15px 30px 15px 30px;
+  background-color: #191919; 
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.cabinet_logout:hover{
+  color: #fff;
+  text-decoration: none;
+}
+.cabinet_logout:active{
+  background-color: #000;
+  color: #fff;
+}
+
+.cabinet_logout:focus{
+  outline: none;
+  text-decoration: none;
+  color: #fff;  
+}
